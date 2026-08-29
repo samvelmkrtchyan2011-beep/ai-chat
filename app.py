@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Կարգավորում ենք API բանալին
-genai.configure(api_key="AQ.Ab8RN6L7OXwARLBuLyl0len9qXh-3tGmnhtFMuh1hAC5ajQIhQ")
+genai.configureAQ.Ab8RN6KH_cFtOpUbfUJkUo-oamOT5C_D2Q-Y180jRGuVfUot-A
 
 st.title("AI chat")
 
