@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-st.title("SAMVEL AI")
+st.title("AI chat ")
 
 # API Key-ը
 genai.configure(api_key="AQ.Ab8RN6J1YIYPwItVUh1de08fEAXtuaGq_H3j")
