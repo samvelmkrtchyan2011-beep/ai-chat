@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-genai.configure(api_key="AQ.Ab8RN6KH_cFtOpUbfUJKUo-oamOT5C_D2Q-Y180jRGuVfUot-")
+genai.configure(api_key="(AQ.Ab8RN6Iw7sYeZdpp3PGyfZ8rVp1R-eRzTIjZ3afKivnpt4cimg")
 
 st.title("AI chat")
 
