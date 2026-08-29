@@ -1,9 +1,10 @@
 import streamlit as st
-from google import genai
+import google.generativeai as genai
 
 st.title("AI chat")
 
-client = genai.Client(api_key="Ab8RN6J1YIYPwItVUh1de08FEAXtuaGq_H3j3WonDdIOFiK6Hg")
+genai.configure(api_key="Ab8RN6J1YIYPwItVUh1de08FEAXtuaGq_H3j3WonDdIOFiK6Hg")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -18,9 +19,6 @@ if prompt := st.chat_input("Գրեք հարցը..."):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-        )
+        response = model.generate_content(prompt)
         st.markdown(response.text)
         st.session_state.messages.append({"role": "assistant", "content": response.text})
