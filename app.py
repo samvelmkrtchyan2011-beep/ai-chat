@@ -1,10 +1,10 @@
 import streamlit as st
 import google.generativeai as genai
 
-st.title("AI chat ")
+st.title("AI chat")
 
 # API Key-ը
-genai.configure(api_key="AQ.Ab8RN6J1YIYPwItVUh1de08fEAXtuaGq_H3j")
+genai.configure(api_key="ԱՅՍՏԵՂ_ՏԵՂԱԴՐԵՔ_ՁԵՐ_API_KEY-Ը")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 if "messages" not in st.session_state:
