@@ -1,4 +1,4 @@
-ort streamlit as st
+import streamlit as stort streamlit as st
 import google.generativeai as genai
 
 st.title("AI chat")
