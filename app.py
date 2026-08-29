@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 st.title("AI chat")
 
-genai.configure(api_key="ԱՅՍՏԵՂ_ՏԵՂԱԴՐԵՔ_ՁԵՐ_API_KEY-Ը")
+genai.configure(api_key="Ab8RN6J1YIYPwItVUh1de08FEAXtuaGq_H3j3WonDdIOFiK6Hg")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 if "messages" not in st.session_state:
@@ -22,4 +22,3 @@ if prompt := st.chat_input("Գրեք հարցը..."):
         response = model.generate_content(prompt)
         st.markdown(response.text)
         st.session_state.messages.append({"role": "assistant", "content": response.text})
-    
