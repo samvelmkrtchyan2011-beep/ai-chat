@@ -1,3 +1,4 @@
-streamlit
-google-generativeai
+Python
+import streamlit as st
+
     
