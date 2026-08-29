@@ -3,7 +3,10 @@ import google.generativeai as genai
 
 st.title("AI chat")
 
-genai.configure(api_key="ՔՈ_API_KEY")AQ.Ab8RN6L7OXwARLBuLyl0len9qXh-3tGmnhtFMuh1hAC5ajQIhQ
+File "/mount/src/ai-chat/app.py", line 6
+  genai.configure("api_key=AQ.Ab8RN6L7OXwARLBuLyl0len9qXh-3tGmnhtFMuh1hAC5ajQIhQ")
+                                                                      
+SyntaxError: invalid decimal literal
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 if "messages" not in st.session_state:
