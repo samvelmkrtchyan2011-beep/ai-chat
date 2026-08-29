@@ -3,7 +3,8 @@ import google.generativeai as genai
 
 st.title("AI chat")
 
-genai.configure(api_key="Ab8RN6J1YIYPwItVUh1de08FEAXtuaGq_H3j3WonDdIOFiK6Hg")
+# API Key-ը
+genai.configure(api_key="AQ.Ab8RN6J1YIYPwItVUh1de08fEAXtuaGq_H3j")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 if "messages" not in st.session_state:
