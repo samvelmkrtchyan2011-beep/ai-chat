@@ -3,7 +3,10 @@ import google.generativeai as genai
 
 genai.configure(api_key="(AQ.Ab8RN6Iw7sYeZdpp3PGyfZ8rVp1R-eRzTIjZ3afKivnpt4cimg")
 
-st.title("AI chat")
+st.title("AI chat")let model = GenerativeModel(name: "gemini-1.5-flash-latest", apiKey: "AIzaSyAb8RN6J770hc4qBibq-7gxU994xIdObH4UwxnxqbjXWPlFE9jQ")
+
+    var body: some View {
+        VStack {
 
 model = genai.GenerativeModel("gemini-1.5-flash")
 
